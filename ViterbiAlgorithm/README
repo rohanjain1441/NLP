@@ -1,4 +1,4 @@
-The above given function decode() uses the Viterbi algorithm to find the most likely tag sequence for a give word.
+The given function decode() uses the Viterbi algorithm to find the most likely tag sequence for a give word.
 It first stores the input sentence in the variable userSentence and also converts it into lower case characters. Next it tokenizes the word using ntlk.word_tokenize(userStentence). We then define the following array to store the best Viterbi path probability and the its associated tags for the Viterbi algorithm.
 x=np.zeros(shape=(2,len(wordBreak)), dtype=object)
 We then define the loop that finds the initial best tag from the start state which gives the maximum Viterbi path probability value
