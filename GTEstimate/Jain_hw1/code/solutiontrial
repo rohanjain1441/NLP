@@ -1,0 +1,15 @@
+import sys
+import re
+
+def formTokens():
+    
+    #f=open('E:/ASU/Intro to NLP/HW/hw1_data/part1/trial.txt','rU');
+    f=open('E:/ASU/Intro to NLP/HW/hw1_data/part1/*.txt','rU');
+    
+    textFile=f.read()
+    p=re.compile('\w+-\w+|\w+\'s|\w+')
+
+    tokens1=p.findall(textFile)
+    
+    print tokens1
+    
